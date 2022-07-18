@@ -12,3 +12,9 @@ Zip bigint,
 PhoneNumber bigint,
 Email varchar(200)
 );
+
+INSERT INTO AddressBook
+VALUES('kalpak','Chincholkar','7th cross','Nagpur','Karnataka',560065,5243454345,'abc@gmail.com'),
+('gurupreet','singh','8th cross','Andamaan','Karnataka',560066,1323567775,'def@gmail.com'),
+('Shivraj','Srivasthav','9th cross','Bengalaru','Telangana',450065,5478908765,'ghi@gmail.com'),
+('vishwas','Singh','4th cross','Guhati','Assam',660065,5243458745,'jkl@gmail.com');
