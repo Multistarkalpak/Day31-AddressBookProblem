@@ -53,3 +53,16 @@ SELECT * from AddressBook ORDER BY FirstName;
 
 ----to retrive all the data alphabetically order by City--------
 SELECT * from AddressBook ORDER BY City;
+
+-----UC9-Identify addressbook with name and type----------
+ALTER TABLE AddressBook
+ADD Type Varchar(200);
+
+Select * from AddressBook;
+Insert into AddressBook(FirstName,LastName ,Address,City,State,Zip,PhoneNumber,Email) Values('Gaurav','gahukar','12th main','Bengaluru','Karnataka',456765,9876545678,'stu@gmail.com');
+
+UPDATE AddressBook set type='Friends' where FirstName='Gurpreet';
+UPDATE AddressBook set Type='Proffession' where FirstName='Shivraj';
+UPDATE AddressBook set Type='Friends' where FirstName='Vishwas';
+UPDATE AddressBook set Type='Profession' where FirstName='Abhishek';
+UPDATE AddressBook set type='Family' where FirstName='Gaurav';
