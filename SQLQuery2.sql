@@ -30,3 +30,13 @@ select * from AddressBook;
 Delete From AddressBook where LastName='Singh';
 
 Select * from AddressBook;
+
+-----------(UC6)RetriveThepersoOnCityORState-------
+select * from AddressBook;
+-----------inserted some more data to execute the uc--------------
+INSERT INTO AddressBook
+Values('Vishwas','rana','9th main','Bangaluru','Karnataka',560087,1234567897,'jkl@gmail.com'),
+('GurPreet','Kumar','10th main','Andamaan','Andamaan',560097,1234567807,'mno@gmail.com'),
+('AbhiShek','Jadhao','11th main','Thane','Maharashtra',561237,1653267897,'pqr@gmail.com');
+-------------UC6-retrive the person belonging to city or state--------------
+SELECT FirstName From AddressBook where  City='Thane' or State='Maharashtra';
