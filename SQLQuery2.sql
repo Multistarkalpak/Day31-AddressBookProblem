@@ -25,3 +25,8 @@ UPDATE AddressBook set PhoneNumber=1234567890 where FirstName='gurupreet';
 UPDATE AddressBook set State='Maharastra',City='Mumbai' where FirstName='Shivraj';
 
 select * from AddressBook;
+
+----------(UC5)AblitiyTheData-------
+Delete From AddressBook where LastName='Singh';
+
+Select * from AddressBook;
