@@ -22,7 +22,7 @@ VALUES('kalpak','Chincholkar','7th cross','Nagpur','Karnataka',560065,5243454345
 
 ---------(UC4)-upadte the data----------
 UPDATE AddressBook set PhoneNumber=1234567890 where FirstName='gurupreet';
-UPDATE AddressBook set State='Maharastra',City='Mumbai' where FirstName='Shivraj';
+UPDATE AddressBook set State='Maharashtra',City='Mumbai' where FirstName='Shivraj';
 
 select * from AddressBook;
 
@@ -40,3 +40,7 @@ Values('Vishwas','rana','9th main','Bangaluru','Karnataka',560087,1234567897,'jk
 ('AbhiShek','Jadhao','11th main','Thane','Maharashtra',561237,1653267897,'pqr@gmail.com');
 -------------UC6-retrive the person belonging to city or state--------------
 SELECT FirstName From AddressBook where  City='Thane' or State='Maharashtra';
+
+-------UC7-Ability to count the Size of the addressBook by state and city------------
+SELECT COUNT(FirstName) as AddressBookCount,State,City from AddressBook group by State,City;
+select * from AddressBook;
