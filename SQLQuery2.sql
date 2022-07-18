@@ -44,3 +44,12 @@ SELECT FirstName From AddressBook where  City='Thane' or State='Maharashtra';
 -------UC7-Ability to count the Size of the addressBook by state and city------------
 SELECT COUNT(FirstName) as AddressBookCount,State,City from AddressBook group by State,City;
 select * from AddressBook;
+ 
+ ----------UC8 Retrive the entires sorted alphabetically by the persons name for given city--------
+SELECT FirstName,City from AddressBook ORDER BY FirstName;
+
+----to retrive all the data alphabetically order by firstname--------
+SELECT * from AddressBook ORDER BY FirstName;
+
+----to retrive all the data alphabetically order by City--------
+SELECT * from AddressBook ORDER BY City;
