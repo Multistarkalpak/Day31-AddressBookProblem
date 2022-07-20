@@ -69,3 +69,10 @@ UPDATE AddressBook set contactType='Family' where FirstName='Gaurav';
 
 ---------UC10-Ability to get the number count by persons-----------
 SELECT COUNT(*) as type,contactType from AddressBook group by contactType;
+
+----------UC11 - ability to add the person to both the family and friends----
+INSERT INTO AddressBook
+VALUES('Jivesh','Bhushan','6th cross','Deshmukhwadi','Wani',765434,457545809,'vwx@gmail.com','Family'),
+('Jivesh','Bhushan','6th cross','Deshmukhwadi','Wani',765434,457545809,'vwx@gmail.com','Friends')
+
+Select * from AddressBook;
